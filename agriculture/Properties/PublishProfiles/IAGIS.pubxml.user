@@ -1,0 +1,1210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>F:\myweb\IAGIS</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/IAGIS.dll">
+      <publishTime>04/10/2017 09:45:15</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.dll">
+      <publishTime>10/15/2012 07:37:38</publishTime>
+    </File>
+    <File Include="css/layout.css">
+      <publishTime>04/06/2017 16:07:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/15/2016 12:11:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/15/2016 12:11:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/15/2016 12:11:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/15/2016 12:11:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/15/2016 12:11:22</publishTime>
+    </File>
+    <File Include="images/angleLeft.png">
+      <publishTime>08/19/2016 09:35:46</publishTime>
+    </File>
+    <File Include="images/dibubg.png">
+      <publishTime>08/19/2016 09:35:47</publishTime>
+    </File>
+    <File Include="images/dq_nylq.jpg">
+      <publishTime>11/22/2016 09:24:37</publishTime>
+    </File>
+    <File Include="images/headeLogo.png">
+      <publishTime>08/19/2016 09:35:51</publishTime>
+    </File>
+    <File Include="images/headerL.png">
+      <publishTime>08/19/2016 09:35:52</publishTime>
+    </File>
+    <File Include="images/headerR.png">
+      <publishTime>08/19/2016 09:35:52</publishTime>
+    </File>
+    <File Include="images/icon5.png">
+      <publishTime>08/19/2016 09:35:54</publishTime>
+    </File>
+    <File Include="images/icon6.png">
+      <publishTime>08/19/2016 09:35:54</publishTime>
+    </File>
+    <File Include="images/lfcot.png">
+      <publishTime>08/19/2016 09:35:54</publishTime>
+    </File>
+    <File Include="images/lftop.png">
+      <publishTime>08/19/2016 09:35:50</publishTime>
+    </File>
+    <File Include="images/shous1.png">
+      <publishTime>08/19/2016 09:35:55</publishTime>
+    </File>
+    <File Include="images/topbg.png">
+      <publishTime>08/19/2016 09:35:54</publishTime>
+    </File>
+    <File Include="img/close-small.png">
+      <publishTime>07/10/2014 12:15:12</publishTime>
+    </File>
+    <File Include="img/collapse.png">
+      <publishTime>05/05/2015 16:22:10</publishTime>
+    </File>
+    <File Include="img/cross.png">
+      <publishTime>05/10/2009 19:03:56</publishTime>
+    </File>
+    <File Include="img/eye-red.png">
+      <publishTime>08/18/2016 10:57:03</publishTime>
+    </File>
+    <File Include="img/eye.png">
+      <publishTime>05/10/2009 19:04:42</publishTime>
+    </File>
+    <File Include="img/FourMap.png">
+      <publishTime>02/27/2017 10:25:26</publishTime>
+    </File>
+    <File Include="img/glyphicons-halflings.png">
+      <publishTime>10/20/2015 12:25:52</publishTime>
+    </File>
+    <File Include="img/identify.png">
+      <publishTime>12/08/2015 15:21:40</publishTime>
+    </File>
+    <File Include="img/location.png">
+      <publishTime>12/08/2015 15:21:40</publishTime>
+    </File>
+    <File Include="img/locationhover.png">
+      <publishTime>12/08/2015 15:21:40</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>08/19/2016 09:35:51</publishTime>
+    </File>
+    <File Include="img/map-1.png">
+      <publishTime>03/28/2016 09:45:20</publishTime>
+    </File>
+    <File Include="img/map.png">
+      <publishTime>03/28/2016 09:45:20</publishTime>
+    </File>
+    <File Include="img/MeasureArea.png">
+      <publishTime>02/27/2017 09:56:32</publishTime>
+    </File>
+    <File Include="img/MeasureLength.png">
+      <publishTime>02/27/2017 09:52:59</publishTime>
+    </File>
+    <File Include="img/menu/Menu1.png">
+      <publishTime>02/20/2017 10:31:27</publishTime>
+    </File>
+    <File Include="img/menu/Menu1_H.png">
+      <publishTime>02/20/2017 10:24:01</publishTime>
+    </File>
+    <File Include="img/menu/Menu2.png">
+      <publishTime>12/15/2016 20:54:59</publishTime>
+    </File>
+    <File Include="img/menu/Menu2_H.png">
+      <publishTime>02/20/2017 10:26:24</publishTime>
+    </File>
+    <File Include="img/menu/Menu3.png">
+      <publishTime>09/13/2016 14:45:21</publishTime>
+    </File>
+    <File Include="img/menu/Menu3_H.png">
+      <publishTime>09/13/2016 14:45:56</publishTime>
+    </File>
+    <File Include="img/menu/Menu4.png">
+      <publishTime>11/04/2016 16:28:12</publishTime>
+    </File>
+    <File Include="img/menu/Menu4_H.png">
+      <publishTime>11/04/2016 16:28:46</publishTime>
+    </File>
+    <File Include="img/relate-geo.png">
+      <publishTime>08/12/2016 15:44:50</publishTime>
+    </File>
+    <File Include="img/satellite-1.png">
+      <publishTime>03/28/2016 09:45:20</publishTime>
+    </File>
+    <File Include="img/satellite.png">
+      <publishTime>03/28/2016 09:45:20</publishTime>
+    </File>
+    <File Include="img/search.jpg">
+      <publishTime>03/28/2016 09:45:20</publishTime>
+    </File>
+    <File Include="img/search3D-min.png">
+      <publishTime>05/13/2016 11:47:26</publishTime>
+    </File>
+    <File Include="img/search3D-S.png">
+      <publishTime>05/16/2016 10:48:32</publishTime>
+    </File>
+    <File Include="img/search3D.png">
+      <publishTime>03/28/2016 09:45:20</publishTime>
+    </File>
+    <File Include="img/Spatial_A.png">
+      <publishTime>02/27/2017 09:32:36</publishTime>
+    </File>
+    <File Include="img/Spatial_B.png">
+      <publishTime>02/27/2017 09:40:24</publishTime>
+    </File>
+    <File Include="img/tools/ClearGraphic.png">
+      <publishTime>08/25/2016 16:00:46</publishTime>
+    </File>
+    <File Include="img/tools/DeleteData.png">
+      <publishTime>08/25/2016 16:00:40</publishTime>
+    </File>
+    <File Include="img/tools/FullScreen.png">
+      <publishTime>08/25/2016 16:00:34</publishTime>
+    </File>
+    <File Include="img/tools/Help.png">
+      <publishTime>11/30/2016 15:42:50</publishTime>
+    </File>
+    <File Include="img/tools/IQuery.png">
+      <publishTime>08/25/2016 16:36:10</publishTime>
+    </File>
+    <File Include="img/tools/LayerControl.png">
+      <publishTime>08/25/2016 16:00:21</publishTime>
+    </File>
+    <File Include="img/tools/Maps.png">
+      <publishTime>10/25/2016 15:59:56</publishTime>
+    </File>
+    <File Include="img/tools/Measure.png">
+      <publishTime>02/23/2017 17:24:00</publishTime>
+    </File>
+    <File Include="img/tools/MeasureArea.png">
+      <publishTime>08/25/2016 16:00:12</publishTime>
+    </File>
+    <File Include="img/tools/MeasureLength.png">
+      <publishTime>08/25/2016 16:00:01</publishTime>
+    </File>
+    <File Include="img/tools/MQuery.png">
+      <publishTime>08/25/2016 16:00:59</publishTime>
+    </File>
+    <File Include="img/tools/Statistics.png">
+      <publishTime>02/23/2017 17:19:05</publishTime>
+    </File>
+    <File Include="img/tools/tools.png">
+      <publishTime>08/25/2016 16:00:53</publishTime>
+    </File>
+    <File Include="img/TpBj.png">
+      <publishTime>08/25/2016 11:19:22</publishTime>
+    </File>
+    <File Include="img/TwoMap.png">
+      <publishTime>02/27/2017 10:03:26</publishTime>
+    </File>
+    <File Include="img/x.png">
+      <publishTime>04/06/2016 11:26:42</publishTime>
+    </File>
+    <File Include="img/ztBtn.png">
+      <publishTime>08/09/2016 17:37:03</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>04/09/2017 23:00:43</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/dojo/dojo.js">
+      <publishTime>04/06/2017 11:33:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/css/esri.css">
+      <publishTime>03/03/2016 17:45:52</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/agscommon.js">
+      <publishTime>03/03/2016 17:45:52</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/agsdynamic.js">
+      <publishTime>03/03/2016 17:45:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/agsimageservice.js">
+      <publishTime>03/03/2016 17:44:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/agstiled.js">
+      <publishTime>03/03/2016 17:44:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ArcGISDynamicMapServiceLayer.js">
+      <publishTime>03/03/2016 17:46:12</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ArcGISImageServiceLayer.js">
+      <publishTime>03/03/2016 17:45:19</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ArcGISImageServiceVectorLayer.js">
+      <publishTime>03/03/2016 17:45:02</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ArcGISMapServiceLayer.js">
+      <publishTime>03/03/2016 17:43:49</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ArcGISTiledMapServiceLayer.js">
+      <publishTime>03/03/2016 17:45:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/CodedValueDomain.js">
+      <publishTime>03/03/2016 17:44:38</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/CSVLayer.js">
+      <publishTime>03/03/2016 17:46:13</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/DataAdapterFeatureLayer.js">
+      <publishTime>03/03/2016 17:44:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/DataSource.js">
+      <publishTime>03/03/2016 17:45:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/DimensionalDefinition.js">
+      <publishTime>03/03/2016 17:44:40</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/Domain.js">
+      <publishTime>03/03/2016 17:44:59</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/dynamic.js">
+      <publishTime>03/03/2016 17:45:34</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/DynamicLayerInfo.js">
+      <publishTime>03/03/2016 17:46:12</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/DynamicMapServiceLayer.js">
+      <publishTime>03/03/2016 17:45:16</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/FeatureEditResult.js">
+      <publishTime>03/03/2016 17:43:48</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/FeatureLayer.js">
+      <publishTime>03/03/2016 17:44:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/FeatureTemplate.js">
+      <publishTime>03/03/2016 17:45:16</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/FeatureType.js">
+      <publishTime>03/03/2016 17:44:28</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/Field.js">
+      <publishTime>03/03/2016 17:44:48</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/GeoRSSLayer.js">
+      <publishTime>03/03/2016 17:44:40</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/gfxSniff.js">
+      <publishTime>03/03/2016 17:43:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/graphics.js">
+      <publishTime>03/03/2016 17:45:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/GraphicsLayer.js">
+      <publishTime>03/03/2016 17:44:25</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/GridLayout.js">
+      <publishTime>03/03/2016 17:43:59</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/HeatmapManager.js">
+      <publishTime>03/03/2016 17:44:55</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ImageParameters.js">
+      <publishTime>03/03/2016 17:43:54</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ImageServiceLayerMixin.js">
+      <publishTime>03/03/2016 17:45:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ImageServiceParameters.js">
+      <publishTime>03/03/2016 17:45:49</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/InheritedDomain.js">
+      <publishTime>03/03/2016 17:45:55</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/JoinDataSource.js">
+      <publishTime>03/03/2016 17:45:26</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/KMLFolder.js">
+      <publishTime>03/03/2016 17:44:26</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/KMLGroundOverlay.js">
+      <publishTime>03/03/2016 17:45:21</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/KMLLayer.js">
+      <publishTime>03/03/2016 17:45:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LabelClass.js">
+      <publishTime>03/03/2016 17:44:03</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LabelLayer.js">
+      <publishTime>03/03/2016 17:45:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/labelLayerUtils/DynamicLabelClass.js">
+      <publishTime>03/03/2016 17:43:49</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/labelLayerUtils/StaticLabelClass.js">
+      <publishTime>03/03/2016 17:44:21</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/layer.js">
+      <publishTime>03/03/2016 17:46:01</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LayerDataSource.js">
+      <publishTime>03/03/2016 17:45:42</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LayerDrawingOptions.js">
+      <publishTime>03/03/2016 17:45:45</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LayerInfo.js">
+      <publishTime>03/03/2016 17:43:48</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LayerMapSource.js">
+      <publishTime>03/03/2016 17:45:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LayerSource.js">
+      <publishTime>03/03/2016 17:45:21</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LayerTimeOptions.js">
+      <publishTime>03/03/2016 17:46:12</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/LOD.js">
+      <publishTime>03/03/2016 17:43:59</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/MapImage.js">
+      <publishTime>03/03/2016 17:43:49</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/MapImageLayer.js">
+      <publishTime>03/03/2016 17:44:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/MosaicRule.js">
+      <publishTime>03/03/2016 17:46:12</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/OnDemandMode.js">
+      <publishTime>03/03/2016 17:45:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/OpenStreetMapLayer.js">
+      <publishTime>03/03/2016 17:45:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/osm.js">
+      <publishTime>03/03/2016 17:44:59</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/PixelBlock.js">
+      <publishTime>03/03/2016 17:45:20</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/pixelFilters/VectorFieldPixelFilter.js">
+      <publishTime>03/03/2016 17:44:49</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/PurgeOptions.js">
+      <publishTime>03/03/2016 17:44:26</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/QueryDataSource.js">
+      <publishTime>03/03/2016 17:43:52</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/RangeDomain.js">
+      <publishTime>03/03/2016 17:44:11</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/Raster.js">
+      <publishTime>03/03/2016 17:45:07</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/RasterDataSource.js">
+      <publishTime>03/03/2016 17:44:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/rasterFormats/ImageCanvasDecoder.js">
+      <publishTime>03/03/2016 17:43:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/rasterFormats/Jpg.js">
+      <publishTime>03/03/2016 17:44:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/rasterFormats/JpgPlus.js">
+      <publishTime>03/03/2016 17:46:12</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/rasterFormats/LercCodec.js">
+      <publishTime>03/03/2016 17:44:55</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/rasterFormats/Png.js">
+      <publishTime>03/03/2016 17:45:16</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/rasterFormats/Raw.js">
+      <publishTime>03/03/2016 17:45:51</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/rasterFormats/Zlib.js">
+      <publishTime>03/03/2016 17:44:45</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/RasterFunction.js">
+      <publishTime>03/03/2016 17:43:46</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/RasterLayer.js">
+      <publishTime>03/03/2016 17:46:01</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/RenderMode.js">
+      <publishTime>03/03/2016 17:43:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/SelectionMode.js">
+      <publishTime>03/03/2016 17:46:07</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/ServiceGeneratedFeatureCollection.js">
+      <publishTime>03/03/2016 17:43:59</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/SnapshotMode.js">
+      <publishTime>03/03/2016 17:44:48</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/StreamLayer.js">
+      <publishTime>03/03/2016 17:44:45</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/StreamMode.js">
+      <publishTime>03/03/2016 17:45:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/StreamTrackManager.js">
+      <publishTime>03/03/2016 17:44:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/TableDataSource.js">
+      <publishTime>03/03/2016 17:43:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/tiled.js">
+      <publishTime>03/03/2016 17:45:19</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/TiledMapServiceLayer.js">
+      <publishTime>03/03/2016 17:46:00</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/TileInfo.js">
+      <publishTime>03/03/2016 17:45:16</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/TileMap.js">
+      <publishTime>03/03/2016 17:46:13</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/TimeInfo.js">
+      <publishTime>03/03/2016 17:44:22</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/TimeReference.js">
+      <publishTime>03/03/2016 17:44:45</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/TrackManager.js">
+      <publishTime>03/03/2016 17:46:04</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/unitBezier.js">
+      <publishTime>03/03/2016 17:46:14</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/vector-tile.js">
+      <publishTime>03/03/2016 17:45:07</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/VectorTileLayer.js">
+      <publishTime>03/03/2016 17:45:04</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/WebTiledLayer.js">
+      <publishTime>03/03/2016 17:45:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/WFSLayer.js">
+      <publishTime>03/03/2016 17:46:07</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/wms.js">
+      <publishTime>03/03/2016 17:46:01</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/WMSLayer.js">
+      <publishTime>03/03/2016 17:44:49</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/WMSLayerInfo.js">
+      <publishTime>03/03/2016 17:45:48</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/WMSTLayer.js">
+      <publishTime>03/03/2016 17:45:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/wmts.js">
+      <publishTime>03/03/2016 17:45:39</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/WMTSLayer.js">
+      <publishTime>03/03/2016 17:45:12</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/layers/WMTSLayerInfo.js">
+      <publishTime>03/03/2016 17:44:16</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/AddressCandidate.js">
+      <publishTime>03/03/2016 17:44:49</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/AlgorithmicColorRamp.js">
+      <publishTime>03/03/2016 17:44:08</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/AreasAndLengthsParameters.js">
+      <publishTime>03/03/2016 17:45:22</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/BufferParameters.js">
+      <publishTime>03/03/2016 17:44:24</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ClassBreaksDefinition.js">
+      <publishTime>03/03/2016 17:45:27</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ClassificationDefinition.js">
+      <publishTime>03/03/2016 17:45:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/closestfacility.js">
+      <publishTime>03/03/2016 17:45:12</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ClosestFacilityParameters.js">
+      <publishTime>03/03/2016 17:43:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ClosestFacilitySolveResult.js">
+      <publishTime>03/03/2016 17:44:07</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ClosestFacilityTask.js">
+      <publishTime>03/03/2016 17:45:11</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ColorRamp.js">
+      <publishTime>03/03/2016 17:44:22</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/DataFile.js">
+      <publishTime>03/03/2016 17:45:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/DataLayer.js">
+      <publishTime>03/03/2016 17:44:37</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/BatchValidationJob.js">
+      <publishTime>03/03/2016 17:46:01</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/BatchValidationJobInfo.js">
+      <publishTime>03/03/2016 17:43:45</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/BatchValidationParameters.js">
+      <publishTime>03/03/2016 17:44:18</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/BatchValidationTask.js">
+      <publishTime>03/03/2016 17:45:43</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/DashboardResult.js">
+      <publishTime>03/03/2016 17:44:20</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/DashboardTask.js">
+      <publishTime>03/03/2016 17:45:03</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/GetResultsQueryParameters.js">
+      <publishTime>03/03/2016 17:43:54</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/ReviewerAttributes.js">
+      <publishTime>03/03/2016 17:44:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/ReviewerFilters.js">
+      <publishTime>03/03/2016 17:43:52</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/ReviewerLifecycle.js">
+      <publishTime>03/03/2016 17:44:24</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/ReviewerResultsTask.js">
+      <publishTime>03/03/2016 17:45:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/ReviewerSession.js">
+      <publishTime>03/03/2016 17:44:24</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/SessionOptions.js">
+      <publishTime>03/03/2016 17:45:27</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/datareviewer/_DRSBaseTask.js">
+      <publishTime>03/03/2016 17:43:59</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/Date.js">
+      <publishTime>03/03/2016 17:46:13</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/DensifyParameters.js">
+      <publishTime>03/03/2016 17:45:21</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/DirectionsFeatureSet.js">
+      <publishTime>03/03/2016 17:44:37</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/DistanceParameters.js">
+      <publishTime>03/03/2016 17:45:02</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/FeatureSet.js">
+      <publishTime>03/03/2016 17:44:25</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/find.js">
+      <publishTime>03/03/2016 17:44:48</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/FindParameters.js">
+      <publishTime>03/03/2016 17:44:11</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/FindResult.js">
+      <publishTime>03/03/2016 17:44:22</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/FindTask.js">
+      <publishTime>03/03/2016 17:45:51</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/GeneralizeParameters.js">
+      <publishTime>03/03/2016 17:44:59</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/generateRenderer.js">
+      <publishTime>03/03/2016 17:45:28</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/GenerateRendererParameters.js">
+      <publishTime>03/03/2016 17:46:01</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/GenerateRendererTask.js">
+      <publishTime>03/03/2016 17:45:29</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/AddressStudyArea.js">
+      <publishTime>03/03/2016 17:44:23</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/BatchGeographyQuery.js">
+      <publishTime>03/03/2016 17:44:09</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/DriveBuffer.js">
+      <publishTime>03/03/2016 17:44:21</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/DriveUnits.js">
+      <publishTime>03/03/2016 17:45:31</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/EnrichParameters.js">
+      <publishTime>03/03/2016 17:44:59</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/EnrichParametersBase.js">
+      <publishTime>03/03/2016 17:45:41</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/GeoenrichmentTask.js">
+      <publishTime>03/03/2016 17:43:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/GeographyLevel.js">
+      <publishTime>03/03/2016 17:44:10</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/GeographyQuery.js">
+      <publishTime>03/03/2016 17:45:22</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/GeographyQueryBase.js">
+      <publishTime>03/03/2016 17:45:26</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/GeometryStudyArea.js">
+      <publishTime>03/03/2016 17:45:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/IntersectingGeographies.js">
+      <publishTime>03/03/2016 17:46:11</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/IntersectingGeography.js">
+      <publishTime>03/03/2016 17:44:10</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/ReportParameters.js">
+      <publishTime>03/03/2016 17:43:54</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/RingBuffer.js">
+      <publishTime>03/03/2016 17:45:39</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/StandardGeographyQueryTask.js">
+      <publishTime>03/03/2016 17:45:27</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/StandardGeographyStudyArea.js">
+      <publishTime>03/03/2016 17:46:13</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/StandardIntersectingGeography.js">
+      <publishTime>03/03/2016 17:45:46</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/StudyArea.js">
+      <publishTime>03/03/2016 17:44:33</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/studyAreaFromJson.js">
+      <publishTime>03/03/2016 17:45:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/StudyAreaOptions.js">
+      <publishTime>03/03/2016 17:46:01</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/studyAreaOptionsFromJson.js">
+      <publishTime>03/03/2016 17:44:38</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/SubGeographyQuery.js">
+      <publishTime>03/03/2016 17:44:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geoenrichment/taskHelper.js">
+      <publishTime>03/03/2016 17:45:52</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/geometry.js">
+      <publishTime>03/03/2016 17:44:17</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/GeometryService.js">
+      <publishTime>03/03/2016 17:44:42</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/Geoprocessor.js">
+      <publishTime>03/03/2016 17:45:16</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/gp.js">
+      <publishTime>03/03/2016 17:45:19</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/GPMessage.js">
+      <publishTime>03/03/2016 17:45:11</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/GPResultImageLayer.js">
+      <publishTime>03/03/2016 17:45:45</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/identify.js">
+      <publishTime>03/03/2016 17:45:26</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/IdentifyParameters.js">
+      <publishTime>03/03/2016 17:43:52</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/IdentifyResult.js">
+      <publishTime>03/03/2016 17:44:28</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/IdentifyTask.js">
+      <publishTime>03/03/2016 17:45:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/imageserviceidentify.js">
+      <publishTime>03/03/2016 17:44:54</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ImageServiceIdentifyParameters.js">
+      <publishTime>03/03/2016 17:45:11</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ImageServiceIdentifyResult.js">
+      <publishTime>03/03/2016 17:44:58</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ImageServiceIdentifyTask.js">
+      <publishTime>03/03/2016 17:45:45</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ImageServiceMeasureParameters.js">
+      <publishTime>03/03/2016 17:44:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ImageServiceMeasureTask.js">
+      <publishTime>03/03/2016 17:45:54</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ImageServiceProjectTask.js">
+      <publishTime>03/03/2016 17:45:06</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/JobInfo.js">
+      <publishTime>03/03/2016 17:45:11</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/LegendLayer.js">
+      <publishTime>03/03/2016 17:45:15</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/LengthsParameters.js">
+      <publishTime>03/03/2016 17:43:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/LinearUnit.js">
+      <publishTime>03/03/2016 17:44:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locationproviders/CoordinatesLocationProvider.js">
+      <publishTime>03/03/2016 17:44:16</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locationproviders/GeometryLocationProvider.js">
+      <publishTime>03/03/2016 17:44:32</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locationproviders/LocationProviderBase.js">
+      <publishTime>03/03/2016 17:44:32</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locationproviders/LocationProviderClientBase.js">
+      <publishTime>03/03/2016 17:44:48</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locationproviders/LocationProviderRemoteBase.js">
+      <publishTime>03/03/2016 17:44:01</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locationproviders/LocatorLocationProvider.js">
+      <publishTime>03/03/2016 17:45:19</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locationproviders/QueryTaskLocationProvider.js">
+      <publishTime>03/03/2016 17:45:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locationproviders/StandardGeographyQueryLocationProvider.js">
+      <publishTime>03/03/2016 17:45:43</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/locator.js">
+      <publishTime>03/03/2016 17:44:17</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/MultipartColorRamp.js">
+      <publishTime>03/03/2016 17:46:08</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/na.js">
+      <publishTime>03/03/2016 17:45:40</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/NAMessage.js">
+      <publishTime>03/03/2016 17:44:14</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/NAServiceDescription.js">
+      <publishTime>03/03/2016 17:45:06</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/NATypes.js">
+      <publishTime>03/03/2016 17:43:47</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/OffsetParameters.js">
+      <publishTime>03/03/2016 17:45:33</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ParameterValue.js">
+      <publishTime>03/03/2016 17:45:05</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/PrintParameters.js">
+      <publishTime>03/03/2016 17:44:32</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/PrintTask.js">
+      <publishTime>03/03/2016 17:46:10</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/PrintTemplate.js">
+      <publishTime>03/03/2016 17:45:24</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ProjectParameters.js">
+      <publishTime>03/03/2016 17:46:13</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/query.js">
+      <publishTime>03/03/2016 17:45:52</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/QueryTask.js">
+      <publishTime>03/03/2016 17:45:43</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/RasterData.js">
+      <publishTime>03/03/2016 17:44:12</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/RelationParameters.js">
+      <publishTime>03/03/2016 17:44:09</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/RelationshipQuery.js">
+      <publishTime>03/03/2016 17:44:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/route.js">
+      <publishTime>03/03/2016 17:43:46</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/RouteParameters.js">
+      <publishTime>03/03/2016 17:45:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/RouteResult.js">
+      <publishTime>03/03/2016 17:45:56</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/RouteTask.js">
+      <publishTime>03/03/2016 17:44:06</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/servicearea.js">
+      <publishTime>03/03/2016 17:45:54</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ServiceAreaParameters.js">
+      <publishTime>03/03/2016 17:43:53</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ServiceAreaSolveResult.js">
+      <publishTime>03/03/2016 17:44:04</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/ServiceAreaTask.js">
+      <publishTime>03/03/2016 17:46:05</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/SpatialRelationship.js">
+      <publishTime>03/03/2016 17:45:57</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/StatisticDefinition.js">
+      <publishTime>03/03/2016 17:43:58</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/Task.js">
+      <publishTime>03/03/2016 17:44:18</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/TrimExtendParameters.js">
+      <publishTime>03/03/2016 17:45:45</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/UniqueValueDefinition.js">
+      <publishTime>03/03/2016 17:45:05</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/esri/tasks/_task.js">
+      <publishTime>03/03/2016 17:44:16</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/init.js">
+      <publishTime>04/06/2017 11:32:42</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/TDTLayer.js">
+      <publishTime>04/08/2017 10:44:35</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/TDTLayer_Anno.js">
+      <publishTime>04/08/2017 10:44:37</publishTime>
+    </File>
+    <File Include="Javascript/ArcGISAPI/3.16/TianDiTuLayer.js">
+      <publishTime>04/06/2017 17:46:53</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/css/docs.css">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/css/pygments-manni.css">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/css/vssver2.scc">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/ico/apple-touch-icon-144-precomposed.png">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/ico/favicon.png">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/ico/vssver2.scc">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/application.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/customizer.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/filesaver.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/holder.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/html5shiv.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/jquery.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/jszip.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/less.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/raw-files.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/respond.min.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/uglify.js">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/docs-assets/js/vssver2.scc">
+      <publishTime>05/26/2016 11:12:24</publishTime>
+    </File>
+    <File Include="Javascript/Framework/Application.js">
+      <publishTime>05/27/2016 12:08:38</publishTime>
+    </File>
+    <File Include="Javascript/Framework/confUrl.js">
+      <publishTime>03/02/2017 15:04:42</publishTime>
+    </File>
+    <File Include="Javascript/Framework/Main.js">
+      <publishTime>04/08/2017 16:52:48</publishTime>
+    </File>
+    <File Include="Javascript/Framework/TDTMap.js">
+      <publishTime>04/06/2017 17:43:36</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery-2.1.4.js">
+      <publishTime>05/06/2016 09:35:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery-ui.custom.min.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery-Uncompressed.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.animate-shadow-min.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.backstretch.min.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.cookie.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.json.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.lazyload.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.lazyload.min.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.min.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.nicescroll.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/jquery.ui.touch-punch.min.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/moodular.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/nano.js">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/Jquery/vssver2.scc">
+      <publishTime>05/26/2016 10:52:38</publishTime>
+    </File>
+    <File Include="Javascript/js/bootstrap-table.js">
+      <publishTime>02/27/2017 15:17:14</publishTime>
+    </File>
+    <File Include="Javascript/js/bootstrap-treeview.js">
+      <publishTime>10/09/2016 10:10:11</publishTime>
+    </File>
+    <File Include="Javascript/js/bootstrap.js">
+      <publishTime>03/30/2016 16:53:20</publishTime>
+    </File>
+    <File Include="Javascript/js/dockeye.js">
+      <publishTime>07/07/2016 15:24:59</publishTime>
+    </File>
+    <File Include="Javascript/js/echarts-all.js">
+      <publishTime>04/09/2017 23:58:31</publishTime>
+    </File>
+    <File Include="Javascript/js/grayscale.js">
+      <publishTime>08/24/2016 18:02:04</publishTime>
+    </File>
+    <File Include="Javascript/js/jquery-2.1.4.js">
+      <publishTime>07/08/2016 11:36:20</publishTime>
+    </File>
+    <File Include="Javascript/js/jquery-ui.js">
+      <publishTime>05/24/2016 02:56:16</publishTime>
+    </File>
+    <File Include="Javascript/js/vue.js">
+      <publishTime>03/23/2017 16:20:01</publishTime>
+    </File>
+    <File Include="Javascript/Modules/AddressQuery.js">
+      <publishTime>07/26/2016 10:33:06</publishTime>
+    </File>
+    <File Include="Javascript/Modules/IdentifyTask.js">
+      <publishTime>02/28/2017 09:29:41</publishTime>
+    </File>
+    <File Include="Javascript/Modules/iframeAddLayer.js">
+      <publishTime>02/27/2017 18:00:00</publishTime>
+    </File>
+    <File Include="Javascript/Modules/initTable.js">
+      <publishTime>02/27/2017 15:59:30</publishTime>
+    </File>
+    <File Include="Javascript/Modules/LayerTree.js">
+      <publishTime>03/02/2017 15:07:24</publishTime>
+    </File>
+    <File Include="Javascript/Modules/MeasureTask.js">
+      <publishTime>04/07/2017 10:23:43</publishTime>
+    </File>
+    <File Include="Javascript/Modules/QueryTask.js">
+      <publishTime>04/09/2017 22:14:41</publishTime>
+    </File>
+    <File Include="Javascript/Modules/SpatialAnaysis.js">
+      <publishTime>02/28/2017 14:04:31</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/bottom.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/bottomCenter.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/bottomLeft.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/bottomRight.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/center.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/centerLeft.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/centerRight.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/inline.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/top.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/topCenter.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/topLeft.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/topRight.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/layouts/vssver2.scc">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/noty.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/promise.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/themes/default.js">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/themes/vssver2.scc">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/Noty/vssver2.scc">
+      <publishTime>05/26/2016 11:51:23</publishTime>
+    </File>
+    <File Include="Javascript/RequireJS/domReady.js">
+      <publishTime>05/26/2016 10:53:48</publishTime>
+    </File>
+    <File Include="Javascript/RequireJS/i18n.js">
+      <publishTime>05/26/2016 10:53:48</publishTime>
+    </File>
+    <File Include="Javascript/RequireJS/require.js">
+      <publishTime>05/26/2016 10:53:48</publishTime>
+    </File>
+    <File Include="Javascript/RequireJS/text.js">
+      <publishTime>05/26/2016 10:53:48</publishTime>
+    </File>
+    <File Include="Json/area.xml">
+      <publishTime>04/08/2017 12:57:29</publishTime>
+    </File>
+    <File Include="Json/basemap.json">
+      <publishTime>06/21/2016 10:44:57</publishTime>
+    </File>
+    <File Include="Json/city/330100.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/330200.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/330300.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/330400.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/330500.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/330600.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/330700.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/330800.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/330900.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/331000.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/city/331100.json">
+      <publishTime>04/06/2017 18:56:40</publishTime>
+    </File>
+    <File Include="Json/hz.json">
+      <publishTime>04/10/2017 00:12:41</publishTime>
+    </File>
+    <File Include="Main_Map.htm">
+      <publishTime>04/09/2017 10:04:57</publishTime>
+    </File>
+    <File Include="Main_Map.js">
+      <publishTime>04/10/2017 00:28:24</publishTime>
+    </File>
+    <File Include="style/bootstrap-slider.css">
+      <publishTime>04/26/2016 17:36:52</publishTime>
+    </File>
+    <File Include="style/bootstrap-table.css">
+      <publishTime>02/22/2017 14:42:15</publishTime>
+    </File>
+    <File Include="style/bootstrap.css">
+      <publishTime>08/24/2016 10:30:20</publishTime>
+    </File>
+    <File Include="style/index.css">
+      <publishTime>08/01/2016 10:12:15</publishTime>
+    </File>
+    <File Include="style/jquery-ui.css">
+      <publishTime>05/24/2016 02:56:16</publishTime>
+    </File>
+    <File Include="style/Main_Map.css">
+      <publishTime>04/09/2017 22:15:53</publishTime>
+    </File>
+    <File Include="style/MultiMap.css">
+      <publishTime>02/23/2017 09:34:17</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/09/2016 17:00:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
