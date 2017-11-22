@@ -67,10 +67,14 @@ function switchLayer() {
 
     } else if (zoomlevel <= midzoom && zoomlevel > minzoom) {
         clearHighLight();
-        $(".actionsPane").show();
-        $(".next").show();
-        $(".prev").show();
-      //  $(".title").show();
+      //  $(".actionsPane").show();
+      //  $(".next").show();
+      //  $(".prev").show();
+        //  $(".title").show();
+        $(".actionsPane").hide();
+        $(".next").hide();
+        $(".prev").hide();
+        $(".title").html("");
         sssy = getCityName();
         ssqy = "";
         $(".sel-fun button").text(sssy);
@@ -78,44 +82,50 @@ function switchLayer() {
         getCityBlockStatic();
         // getCityStaticNumber();
     }
-    //else if (zoomlevel <= maxzoom && zoomlevel > midzoom) {
-    //    clearHighLight();
-    //    //mapPanEvt = map.on("pan-end", function () {
-    //    //  // switchLayer();
-    //    //    getCityName();
-    //    //})
-    //    $(".actionsPane").show();
-    //    $(".next").show();
-    //    $(".prev").show();
-    //   // $(".title").show();
-    //    sssy = getCityName();
-    //    ssqy = "";
-    //    $(".sel-fun button").text(sssy);
-    //    $(".sel-fun button").append("<span class=\"caret\"></span>");
-    //    getCenterBlockName();
-    //    if (clusterType[0] == "建设分布图") {
-    //        getCityCluster(sssy);//获取建设分布图的聚类图层
-    //    } else {
-    //        getClusterData(clusterType, currentattr);//添加聚类图层
-    //    }
+    else if (zoomlevel <= maxzoom && zoomlevel > midzoom) {
+        clearHighLight();
+        $(".actionsPane").show();
+        $(".next").hide();
+        $(".prev").hide();
+        $(".title").html("");
+       // $(".title").show();
+        sssy = getCityName();
+        ssqy = "";
+        $(".sel-fun button").text(sssy);
+        $(".sel-fun button").append("<span class=\"caret\"></span>");
+        getCenterBlockName();
+        if (clusterType[0] == "建设分布图") {
+            getCityCluster(sssy);//获取建设分布图的聚类图层
+        } else {
+            getClusterData(clusterType, currentattr);//添加聚类图层
+        }
 
 
-    //    //  console.log(clusterImg[0]);
-    //    if (showClusterData.length) {
-    //        addMultiClusters(showClusterData);
-    //        // addClusters(showClusterData[0]);
-    //        var number = 0;
-    //        for (var  k = 0; k < showClusterData.length; k++) {
-    //            number += showClusterData[k].length
-    //        }
-    //       // alert();
-    //        $("#total").text(number);
-    //    }
-    //    //  addBorder();
-    //    addBlockBorder();
+        //  console.log(clusterImg[0]);
+        if (showClusterData.length) {
+           // addMultiClusters(showClusterData); //显示点聚类
+            // addClusters(showClusterData[0]);
+            var number = 0;
+            for (var  k = 0; k < showClusterData.length; k++) {
+                number += showClusterData[k].length
+            }
+           // alert();
+            $("#total").text(number);
+        }
+          addBorder();
+        // addBlockBorder();
+          var ld = "";
+          if (layerDType.length) {
 
-    //    }
-    else if (zoomlevel > midzoom) {
+              var ld = getLayerDefine(layerDType, currentattr);//添加矢量图层
+              console.log(ld);
+
+              // addDynamicLayer(ld);
+              addDynamicLayer(pUrl,pArray, ld);
+          }
+
+        }
+    else if (zoomlevel > maxzoom) {
 
         // mapPanEvt = map.on("pan-end", function () {
         //    // switchLayer();
@@ -155,7 +165,8 @@ function switchLayer() {
             var ld = getLayerDefine(layerDType, currentattr);//添加矢量图层
             console.log(ld);
 
-            addDynamicLayer(ld);
+           // addDynamicLayer(ld);
+            addDynamicLayer(currenturl, visiableArray, ld);
         }
 
 
@@ -680,16 +691,16 @@ function PointInsidePolygon(point, vs) {
     return inside;
 };
 //添加动态图层
-function addDynamicLayer(layersql) {
+function addDynamicLayer(url,array,layersql) {
     require(["esri/layers/ImageParameters", "esri/layers/ArcGISDynamicMapServiceLayer"], function (ImageParameters, ArcGISDynamicMapServiceLayer) {
         var imageParameters = new ImageParameters();
         //  imageParameters.layerIds = [0];
-        imageParameters.layerIds = visiableArray;
+        imageParameters.layerIds = array;
         imageParameters.layerOption = ImageParameters.LAYER_OPTION_SHOW;
         imageParameters.transparent = true;
 
         var layerDefs = [];
-        layerDefs[visiableArray[0]] = layersql;
+        layerDefs[array[0]] = layersql;
        // layerDefs[visiableArray[0]] = "";
         imageParameters.layerDefinitions = layerDefs;
         //imageParameters.layerDefinitions = [layersql];
@@ -701,16 +712,16 @@ function addDynamicLayer(layersql) {
                 $("#map_ls").remove();
             }
         }
-        console.log(currenturl, visiableArray);
+        console.log(url, array);
         //   currenturl= "http://localhost:6080/arcgis/rest/services/ls_2000/MapServer";
-        var lslayer = new ArcGISDynamicMapServiceLayer(currenturl, { "imageParameters": imageParameters, "id": "ls", "opacity": 0.6 });
+        var lslayer = new ArcGISDynamicMapServiceLayer(url, { "imageParameters": imageParameters, "id": "ls", "opacity": 0.6 });
         map.addLayer(lslayer, 2);
         areaClick = map.on("click", function (e) {
             require(["Javascript/Framework/IdentifyTask.js"], function (Identify) {
-                Identify.DoIdentify(e.mapPoint, currenturl, visiableArray);
+                Identify.DoIdentify(e.mapPoint, url, array);
             })
         })
-        lslayer.setVisibleLayers(visiableArray);
+        lslayer.setVisibleLayers(array);
 
     })
 

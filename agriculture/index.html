@@ -139,6 +139,8 @@
         var searchSql = "";
         var total = 0;//
         var blockNumber = [];
+        var pUrl = "";//点图层地址
+        var pArray = [];//点图层
         require([
           "dojo/parser",
           "dojo/ready",
@@ -189,7 +191,7 @@
             esri.config.defaults.io.corsDetection = false;
 
             upLevel = mapconfig.maxZoom;
-            midLevel = mapconfig.maxZoom;
+            midLevel = mapconfig.midZoom;
             downLevel = mapconfig.minZoom;
             var clusterLayer;
             var popupOptions = {
@@ -269,6 +271,9 @@
                 clusterImg = ["images/gis/省市县/省.png", "images/gis/省市县/市.png", "images/gis/省市县/县.png"];
                 layerDType = ["'省级'", "'市级'", "'县级'"];
                 currentattr = "建设等级";
+                pUrl = layerConfig["粮食生产功能区"]["功能区级别"].pUrl;
+                pArray = layerConfig["粮食生产功能区"]["功能区级别"].pArray;
+                
 
                 $.ajax({
                     url: jsonurl,
@@ -609,6 +614,8 @@
                             currenturl = layerConfig[nyName][secondName].url;
                             visiableArray = layerConfig[nyName][secondName].array;
                             searchField = layerConfig[nyName][secondName].searchField;
+                            pUrl = layerConfig[nyName][secondName].pUrl;
+                            pArray = layerConfig[nyName][secondName].pArray;
                            // console.log(currenturl);
                         }
                         if (currenturl!="") {

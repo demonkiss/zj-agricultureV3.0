@@ -426,9 +426,12 @@ function setSymbol(geo, attr) {
         });
         switch (geo.type) {
             case "point":
-                var symbol = new PictureMarkerSymbol("img/location.png", 25, 25);
+                var symbol = new PictureMarkerSymbol("img/marker-blue.png", 28, 52).setOffset(0,21);
                 var graphicP = new Graphic(geo, symbol, attr, popupTemplate);
-                map.graphics.add(graphicP);
+                tempLayer.add(graphicP);
+                // popupTemplate.setMap(map);
+                map.infoWindow.show(graphicP.geometry);
+               // map.graphics.add(graphicP);
                 break;
             case "polyline":
                 var sls = new SimpleLineSymbol(SimpleLineSymbol.STYLE_DASH, new Color([255, 0, 0]), 3);
