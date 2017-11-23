@@ -4,7 +4,9 @@
         "功能区级别": {
             "url": "http://localhost:6080/arcgis/rest/services/lsService/MapServer",
             "array": [0],
-            "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            // "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",\
+            "pUrl": "http://118.178.118.139/ArcGIS/rest/services/XDNY_LSpoint/MapServer",
+           
             "pArray":[0],
             "searchField": "认定名称",
           
@@ -55,7 +57,8 @@
             "url": "http://localhost:6080/arcgis/rest/services/lsService/MapServer",
             "searchField": "认定名称",
             "array": [1],
-            "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            // "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            "pUrl": "http://118.178.118.139/ArcGIS/rest/services/XDNY_LSpoint/MapServer",
             "pArray": [0],
             "fieldInfos": [{
                 "fieldName": "认定编号",
@@ -84,7 +87,8 @@
             "url": "http://localhost:6080/arcgis/rest/services/ls_2000/MapServer",
             "array": [0],
             "searchField": "认定名称",
-            "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            //"pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            "pUrl": "http://118.178.118.139/ArcGIS/rest/services/XDNY_LSpoint/MapServer",
             "pArray": [0],
             "fieldInfos": [{
                 "fieldName": "认定编号",
@@ -115,7 +119,8 @@
             "url": "http://localhost:6080/arcgis/rest/services/ls_2000/MapServer",
             "array": [0],
             "searchField": "认定名称",
-            "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            // "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            "pUrl": "http://118.178.118.139/ArcGIS/rest/services/XDNY_LSpoint/MapServer",
             "pArray": [0],
             "fieldInfos": [{
                 "fieldName": "认定编号",
@@ -173,7 +178,8 @@
             "url": "http://localhost:6080/arcgis/rest/services/xdny/MapServer",
             "array": [0],
             "searchField": "名称",
-            "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            // "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            "pUrl": "http://118.178.118.139/ArcGIS/rest/services/XDNY_LSpoint/MapServer",
             "pArray": [1],
             "fieldInfos": [{
                 "fieldName": "名称",
@@ -202,7 +208,8 @@
             "url": "http://localhost:6080/arcgis/rest/services/xdny/MapServer",
             "array": [1],
             "searchField": "名称",
-            "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            // "pUrl": "http://localhost:6080/arcgis/rest/services/zjny/MapServer",
+            "pUrl": "http://118.178.118.139/ArcGIS/rest/services/XDNY_LSpoint/MapServer",
             "pArray": [2],
             "fieldInfos": [{
                 "fieldName": "名称",

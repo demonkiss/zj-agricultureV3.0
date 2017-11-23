@@ -281,9 +281,9 @@ function getCityBlockStatic() {
             success: function (data) {
                 require(["esri/layers/GraphicsLayer", "esri/geometry/Point", "esri/geometry/Polyline", "esri/geometry/Polygon", "esri/symbols/PictureMarkerSymbol", "esri/Color", "esri/graphic", "esri/symbols/SimpleLineSymbol", "esri/symbols/SimpleFillSymbol", "esri/symbols/TextSymbol",
               "esri/symbols/Font"], function (GraphicsLayer,Point, Polyline, Polygon, PictureMarkerSymbol, Color, Graphic, SimpleLineSymbol, SimpleFillSymbol, TextSymbol, Font) {
-                  if (map.getLayer("cityLayer")) {
-                      map.removeLayer(map.getLayer("cityLayer"));
-                  }
+                  //if (map.getLayer("cityLayer")) {
+                  //    map.removeLayer(map.getLayer("cityLayer"));
+                  //}
                  
 
                   var cityTextLayer = new GraphicsLayer({ id: "cityTextLayer" });
@@ -353,7 +353,7 @@ function getCityBlockStatic() {
                       //  map.disableScrollWheelZoom();
                   }
                   // map.addLayer(cityLayer);
-                  map.addLayer(cityLayer);
+                 // map.addLayer(cityLayer);
                   map.addLayer(cityTextLayer);
                 //  alert(2)
                   $("#total").text(total);
