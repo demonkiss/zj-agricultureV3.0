@@ -43,11 +43,12 @@ function switchLayer() {
     if (map.getLayer("clusters")) {
         map.removeLayer(map.getLayer("clusters"));
     }
-    var cLayer = map.getLayer("cityLayer");
-    if (map.getLayer("cityLayer")) {
-        map.removeLayer(map.getLayer("cityLayer"));
+  //  var cLayer = map.getLayer("cityLayer");
+    cityLayer.clear();
+    //if (map.getLayer("cityLayer")) {
+    //    map.removeLayer(map.getLayer("cityLayer"));
 
-    }
+    //}
     if (map.getLayer("cityTextLayer")) {
         map.removeLayer(map.getLayer("cityTextLayer"))
     }
@@ -283,7 +284,7 @@ function getCityBlockStatic() {
                   if (map.getLayer("cityLayer")) {
                       map.removeLayer(map.getLayer("cityLayer"));
                   }
-                  var cityLayer = new GraphicsLayer({ id: "cityLayer" });
+                 
 
                   var cityTextLayer = new GraphicsLayer({ id: "cityTextLayer" });
                   var  centerPoint = [(map.extent.xmax + map.extent.xmin) / 2.0, (map.extent.ymax + map.extent.ymin) / 2.0];
@@ -717,7 +718,7 @@ function addDynamicLayer(url,array,layersql) {
         var lslayer = new ArcGISDynamicMapServiceLayer(url, { "imageParameters": imageParameters, "id": "ls", "opacity": 0.6 });
         map.addLayer(lslayer, 2);
         areaClick = map.on("click", function (e) {
-            require(["Javascript/Framework/IdentifyTask.js"], function (Identify) {
+            require(["Framework/IdentifyTask"], function (Identify) {
                 Identify.DoIdentify(e.mapPoint, url, array);
             })
         })
@@ -977,7 +978,7 @@ function addBorder() {
     $.ajax({
         url: "Json/zhejiang.json",
         dataType: 'json',
-        async: true,
+        async: false,
         data: {},
         success: function (data) {
             require(["esri/layers/GraphicsLayer", "esri/geometry/Polyline", "esri/geometry/Polygon", "esri/symbols/PictureMarkerSymbol", "esri/Color", "esri/graphic", "esri/symbols/SimpleLineSymbol", "esri/symbols/SimpleFillSymbol", "esri/symbols/TextSymbol",
@@ -1051,21 +1052,21 @@ function addZJBorder() {
 }
 //添加浙江市县区划
 function addZJCityBorder() {
-    if (map.getLayer("cityLayer")) {
-        map.removeLayer(map.getLayer("cityLayer"));
+    if (map.getLayer("cityTextLayer")) {
+       // map.removeLayer(map.getLayer("cityLayer"));
         map.removeLayer(map.getLayer("cityTextLayer"));
     }
    
     $.ajax({
         url: "Json/zhejiang.json",
         dataType: 'json',
-        async: true,
+        async: false,
         data: {},
         success: function (data) {
             require(["esri/layers/GraphicsLayer", "esri/geometry/Polygon", "esri/symbols/PictureMarkerSymbol", "esri/Color", "esri/graphic", "esri/symbols/SimpleLineSymbol", "esri/symbols/SimpleFillSymbol", "esri/symbols/TextSymbol",
               "esri/symbols/Font"], function (GraphicsLayer, Polygon, PictureMarkerSymbol, Color, Graphic, SimpleLineSymbol, SimpleFillSymbol, TextSymbol, Font) {
                   borderData = data.features;
-                  var cityLayer = new GraphicsLayer({ id: "cityLayer" });
+                //  var cityLayer = new GraphicsLayer({ id: "cityLayer" });
                   var cityTextLayer = new GraphicsLayer({ id: "cityTextLayer" });
                   //var textLayer
                   for (var i = 0; i < data.features.length; i++) {
@@ -1110,7 +1111,7 @@ function addZJCityBorder() {
                       );
 
                       // map.setExtent(extent, true);
-                      map.addLayer(cityLayer);
+                    //  map.addLayer(cityLayer);
                       map.addLayer(cityTextLayer);
                       //  map.disableScrollWheelZoom();
 
@@ -1137,7 +1138,7 @@ function addZJCityBorder() {
 //添加浙江省统计值
 function addZJCityNumber() {
     if (map.getLayer("cityLayer")) {
-        map.removeLayer(map.getLayer("cityLayer"));
+      //  map.removeLayer(map.getLayer("cityLayer"));
      
     }
     if(map.getLayer("cityTextLayer")){
@@ -1148,13 +1149,13 @@ function addZJCityNumber() {
     $.ajax({
         url: "Json/zhejiang.json",
         dataType: 'json',
-        async: true,
+        async: false,
         data: {},
         success: function (data) {
             require(["esri/layers/GraphicsLayer", "esri/geometry/Polygon", "esri/symbols/PictureMarkerSymbol", "esri/Color", "esri/graphic", "esri/symbols/SimpleLineSymbol", "esri/symbols/SimpleFillSymbol", "esri/symbols/TextSymbol",
               "esri/symbols/Font"], function (GraphicsLayer, Polygon, PictureMarkerSymbol, Color, Graphic, SimpleLineSymbol, SimpleFillSymbol, TextSymbol, Font) {
                   borderData = data.features;
-                  var cityLayer = new GraphicsLayer({ id: "cityLayer" });
+               //   var cityLayer = new GraphicsLayer({ id: "cityLayer" });
                   var cityTextLayer = new GraphicsLayer({ id: "cityTextLayer" });
                   //var textLayer
                   for (var i = 0; i < data.features.length; i++) {
@@ -1210,7 +1211,7 @@ function addZJCityNumber() {
                       // map.setExtent(extent, true);                    
                       //  map.disableScrollWheelZoom();
                   }
-                  map.addLayer(cityLayer);
+               //   map.addLayer(cityLayer);
                   map.addLayer(cityTextLayer);
 
                   console.log(total);
@@ -1283,20 +1284,20 @@ function getTotalNumber() {
 }
 
 function getCityStaticNumber() {
-    if (map.getLayer("cityLayer")) {
-        map.removeLayer(map.getLayer("cityLayer"));
+    if (map.getLayer("cityTextLayer")) {
+       // map.removeLayer(map.getLayer("cityLayer"));
         map.removeLayer(map.getLayer("cityTextLayer"));
     }
     $.ajax({
         url: "Json/zhejiang.json",
         dataType: 'json',
-        async: true,
+        async: false,
         data: {},
         success: function (data) {
             require(["esri/layers/GraphicsLayer", "esri/geometry/Polygon", "esri/symbols/PictureMarkerSymbol", "esri/Color", "esri/graphic", "esri/symbols/SimpleLineSymbol", "esri/symbols/SimpleFillSymbol", "esri/symbols/TextSymbol",
               "esri/symbols/Font"], function (GraphicsLayer, Polygon, PictureMarkerSymbol, Color, Graphic, SimpleLineSymbol, SimpleFillSymbol, TextSymbol, Font) {
                   borderData = data.features;
-                  var cityLayer = new GraphicsLayer({ id: "cityLayer" });
+                //  var cityLayer = new GraphicsLayer({ id: "cityLayer" });
                   var cityTextLayer = new GraphicsLayer({ id: "cityTextLayer" });
                   //var textLayer
                   for (var i = 0; i < data.features.length; i++) {
@@ -1350,7 +1351,7 @@ function getCityStaticNumber() {
                           );
 
                           // map.setExtent(extent, true);
-                          map.addLayer(cityLayer);
+                      //    map.addLayer(cityLayer);
                           map.addLayer(cityTextLayer);
                           break;
                           //  map.disableScrollWheelZoom();

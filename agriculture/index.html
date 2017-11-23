@@ -141,6 +141,7 @@
         var blockNumber = [];
         var pUrl = "";//点图层地址
         var pArray = [];//点图层
+        var cityLayer;
         require([
           "dojo/parser",
           "dojo/ready",
@@ -221,7 +222,8 @@
             map.addLayer(searchLayer, 3);
 
             var annolayer = new TDTLayer_Anno("cia");//影像cia 矢量cva
-
+            cityLayer = new GraphicsLayer({ id: "cityLayer" });
+            map.addLayer(cityLayer, 4);
             $(function () {
               
                 //数组方法的扩展
@@ -946,8 +948,8 @@
             function getsubArea(i) {
                 //  ResetLayer();
                 //  map.enableScrollWheelZoom();
-                if (map.getLayer("cityLayer")) {
-                    map.removeLayer(map.getLayer("cityLayer"));
+                if (map.getLayer("cityTextLayer")) {
+                  //  map.removeLayer(map.getLayer("cityLayer"));
                     map.removeLayer(map.getLayer("cityTextLayer"));
                 }
                 // ssqy = "";
