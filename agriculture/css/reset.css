@@ -1,0 +1,22 @@
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,a,button {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+}
+ul,ol,li{list-style:none;}
+img,button{border:0;}
+input,select,textarea{outline:none;border:none;background:none;/*background:none;Ȼ.search_textbackground:#FFF;IE6search_btnͲ*/}
+textarea{resize:none;}
+table{border-collapse:collapse;}
+a{text-decoration:none;}
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both;}
+.clearfix { *zoom:1; }
+.fl{float:left;}
+.fr{float:right;}
+
+.comWidth{width:1250px;margin-left:auto;margin-right:auto;/*margin-bottom:25px;*/text-align:left;}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}

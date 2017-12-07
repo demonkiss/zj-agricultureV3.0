@@ -12,6 +12,8 @@
     <link href="css/base.css" rel="stylesheet" />
     <link href="css/gisframe.css" rel="stylesheet" />
     <link href="style/bootstrap.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/nylq.css" rel="stylesheet" type="text/css">
     <!--<link href="css/layout.css" rel="stylesheet" />-->
     <style>
         html, body {
@@ -99,7 +101,8 @@
         }
     </script>
     <!--<script src="https://js.arcgis.com/3.20/"></script>-->
-    <script src="Javascript/lib/jquery-2.1.4.js"></script>
+    <!--<script src="Javascript/lib/jquery-2.1.4.js"></script>-->
+    <script src="Javascript/lib/jquery-1.8.3.js"></script>
     <script src="Javascript/lib/bootstrap.js"></script>
     <script src="Javascript/config/layerConfig.js"></script>
     <script src="Javascript/ArcGISAPI/3.16/init.js"></script>
@@ -1166,7 +1169,121 @@
 </head>
 
 <body>
+    
+    <div class="slide">
+        <div class="top clearfix">
+            <i class="fl i1">
+                <img src="images/i1.png" />
+            </i>
+            <span class="fl s1">农业两区</span>
+            <select class="fr sel">
+                <option>浙江省</option>
+            </select>
+        </div>
+        <div class="sjBox">
+            <div class="tabBox tabBox1">
+                <ul class="clearfix">
+                    <li class="clearfix active">
+                        <span class="s1 fl">杭州市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">宁波市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">温州市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">嘉兴市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">湖州市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">绍兴市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">金华市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">衢州市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">舟山市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">台州市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                    <li class="clearfix">
+                        <span class="s1 fl">丽水市</span>
+                        <p class="s2 fr"><span>0</span>个</p>
+                    </li>
+                </ul>
+            </div>
 
+        </div>
+        <div class="jcdBox clearfix">
+            <div class="jcd fl">
+                <i class="fl i1">
+                    <img src="images/check.png" />
+                </i>
+                <span class="s1 fl">粮食生产功能区</span>
+            </div>
+            <div class="jcd fl">
+                <i class="fl i1">
+                    <img src="images/check_active.png" />
+                </i>
+                <span class="s1 fl">现代农业园区</span>
+            </div>
+        </div>
+        <div class="qhBox">
+            <ul class="clearfix qhList">
+                <li class="active">功能区级别</li>
+                <li>建设状态</li>
+                <li>建设面积</li>
+                <li>建设年份</li>
+            </ul>
+        </div>
+        <div class="jb clearfix">
+            <div class="jbBox clearfix active">
+                <i class="i1 fl">
+
+                </i>
+                <span class="s1 fl" style="background: #207300;"></span>
+                <span class="s2 fl">省级</span>
+            </div>
+            <div class="jbBox clearfix">
+                <i class="i1 fl">
+
+                </i>
+                <span class="s1 fl" style="background: #66de59;"></span>
+                <span class="s2 fl">市级</span>
+            </div>
+            <div class="jbBox clearfix">
+                <i class="i1 fl">
+
+                </i>
+                <span class="s1 fl" style="background: #f5d157;"></span>
+                <span class="s2 fl">县级</span>
+            </div>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="输入关键词" />
+            <a href="" class="soo">
+
+            </a>
+        </div>
+        <div class="srBtn"></div>
+    </div>
     <div class="left">
         <div class="top">
             <div id="search" class="fl">
@@ -1223,9 +1340,9 @@
             <img src="images/close.png" class="fr">
             <div class="control">
                 <ul class="btns">
-                    <li class="ls active">粮食生产功能区</li>
+                    <li class="ls active" style="margin-left:120px;">粮食生产功能区</li>
                     <li class="yq">现代农业园区</li>
-                    <li class="nt">标准农田</li>
+                    <!--<li class="nt">标准农田</li>-->
                 </ul>
                 <ul class="second ls-infocontent" style="display: block">
                     <li class="active gn">功能区级别</li>
@@ -1805,5 +1922,71 @@
         </a>
 
     </div>
+    <script>
+    $('.slide .srBtn').toggle(function () {
+
+        $('.slide').animate({ 'left': -250 }, 300);
+
+        $(this).css('background', 'url(images/srBtn1.png)');
+
+    }, function () {
+
+        $('.slide').animate({ 'left': 18 }, 300);
+
+        $(this).css('background', 'url(images/srBtn.png)');
+
+    });
+
+    $('.slide .jcdBox .jcd').click(function () {
+        $('.slide .jcdBox .jcd img').attr('src', 'images/check.png');
+        $(this).find('img').attr('src', 'images/check_active.png');
+    });
+
+    $('.slide .sjBox .tabLi li').click(function () {
+
+        $('.slide .sjBox .tabLi li').removeClass('active');
+
+        $(this).addClass('active');
+
+        var index = $(this).index();
+
+        $('.slide .sjBox .tabBox').hide();
+
+
+        $('.slide .sjBox .tabBox').eq(index).show();
+    });
+
+
+
+    $('.slide .sjBox .tabBox1 li').click(function () {
+
+        $('.slide .sjBox .tabBox1 li').removeClass('active');
+
+        $(this).addClass('active');
+    });
+
+    $('.slide .qhBox li').click(function () {
+        $('.slide .qhBox li').removeClass('active');
+        $(this).addClass('active');
+    })
+
+
+    $('.slide .jb .jbBox').each(function (index, el) {
+        $(el).toggle(function () {
+            if ($(el).hasClass('active')) {
+                $(el).removeClass('active');
+            } else {
+                $(el).addClass('active');
+            }
+        }, function () {
+            if ($(el).hasClass('active')) {
+                $(el).removeClass('active');
+            } else {
+                $(el).addClass('active');
+            }
+        })
+    });
+    </script>
 </body>
+
 </html>

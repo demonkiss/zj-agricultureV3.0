@@ -102,6 +102,8 @@
     <Content Include="css\images\zhumu.png" />
     <Content Include="css\images\zyc.png" />
     <Content Include="css\layout.css" />
+    <Content Include="css\nylq.css" />
+    <Content Include="css\reset.css" />
     <Content Include="extras\ClusterLayer_M.js" />
     <Content Include="extras\ClusterLayer.js" />
     <Content Include="extras\ClusterLayer_old.js" />
@@ -110,7 +112,6 @@
     <Content Include="images\bluetips.png" />
     <Content Include="images\dibubg.png" />
     <Content Include="images\dq_nylq.jpg" />
-    <Content Include="images\headeLogo.png" />
     <Content Include="images\headerL.png" />
     <Content Include="images\headerR.png" />
     <Content Include="images\icon5.png" />
@@ -412,6 +413,7 @@
     <Content Include="Javascript\ArcGISAPI\3.16\TDTLayer_Anno.js" />
     <Content Include="Javascript\ArcGISAPI\3.16\TianDiTuLayer.js" />
     <Content Include="Javascript\lib\bootstrap.js" />
+    <Content Include="Javascript\lib\jquery-1.8.3.js" />
     <Content Include="Javascript\lib\jquery-2.1.4.js" />
     <Content Include="Json\area.xml">
       <SubType>Designer</SubType>

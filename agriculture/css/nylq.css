@@ -1,0 +1,315 @@
+.wrapper{
+	width: 1250px;
+	margin:0 auto;
+	height: 873px;
+	/*background: url(../images/bg.jpg) center 0;*/
+	position: relative;
+}
+
+.slide{
+	width: 248px;
+	min-height: 395px;
+	border:1px solid #c6d0d2;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.9);
+	position: absolute;
+	top: 91px;
+	left: 18px;
+}
+
+.slide .top{
+	height: 36px;
+	background: url(../images/top_bg.jpg) repeat-x;
+	border-radius: 5px 5px 0 0;
+	border-bottom:1px solid #c6d0d2;
+	font-size: 14px;
+	line-height: 36px;
+	color: #fff;
+	padding-left: 13px;
+}
+
+.slide .top .i1{
+	margin-top: 7px;
+	margin-right: 9px;
+}
+
+.slide .top .sel{
+	width: 96px;
+	height: 24px;
+	background: #fff;
+	border:1px solid #2398bc;
+	margin-top: 5px;
+	margin-right: 8px;
+	color: #333;
+	padding-left: 9px;
+}
+
+.slide .jcdBox{
+	border-top: 1px dashed #c1d4dd;
+	border-bottom: 1px dashed #c1d4dd;
+	height: 43px;
+	font:12px/21px "宋体";
+	color: #333;
+	padding-left: 15px;
+}
+
+.slide .jcdBox .i1{
+	margin-top: 11px;
+	margin-right: 6px;
+}
+
+.slide .jcdBox .jcd .s1{
+	margin-top: 13px;
+}
+
+.slide .jcdBox .jcd{
+	width: 116px;
+	cursor: pointer;
+}
+
+.slide .sjBox .tabLi li{
+	width: 111px;
+	height: 53px;
+	border:1px solid #4dadde;
+	color: #2e96cb;
+	text-align: center;
+	font-family: "Microsoft YaHei";
+	cursor: pointer;
+}
+.slide .sjBox .tabLi{
+	margin-top: 12px;
+	margin-left: 12px;
+	margin-bottom: 17px;
+}
+.slide .sjBox .tabLi li .p1{
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 9px;
+	margin-bottom: 5px;
+	
+}
+
+.slide .sjBox .tabLi li .p2{
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.slide .sjBox .tabLi li.active{
+	background: #4dadde;
+	color: #fff;
+}
+
+.slide .sjBox .tabBox{
+	margin-top: 14px;
+	margin-left: 18px;
+}
+.slide .sjBox .tabBox li{
+	float: left;
+	width: 96px;
+	height: 24px;
+	background: #f4f4f4;
+	border:1px solid #d4d4d4;
+	font:12px/24px "宋体";
+	color: #434343;
+	cursor: pointer;
+	margin-right: 17px;
+	margin-bottom: 7px;
+}
+
+.slide .sjBox .tabBox li.active{
+	background: #e1fbff;
+	border-color: #a5cbce;
+}
+
+.slide .sjBox .tabBox .s1{
+	margin-left: 14px;
+}
+.slide .sjBox .tabBox .s2{
+	margin-right: 11px;
+}
+
+.slide .srBtn{
+	position: absolute;
+	width: 19px;
+	height: 37px;
+	background: url(../images/srBtn.png);
+	top: 37px;
+	right: -20px;
+	cursor: pointer;
+}
+
+
+.achor{
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	background: url(../images/achor.png);
+	cursor: pointer;
+}
+
+.achor1{
+	left: 599px;
+	top: 319px;
+}
+
+.achor2{
+	left: 667px;
+	top: 316px;
+}
+
+.achor3{
+	left: 682px;
+	top: 272px;
+}
+
+.achorBig{
+	position: absolute;
+	width: 31px;
+	height: 31px;
+	background: url(../images/achor1.png);
+	cursor: pointer;
+}
+
+.achorBig1{
+	left: 588px;
+	top: 269px;
+}
+
+.smallTk{
+	position: absolute;
+	width: 155px;
+	min-height: 126px;
+	border-radius: 5px;
+	background: #fff;
+	display: none;
+}
+
+.smallTk .top
+{
+	height: 33px;
+	font:16px/33px "Microsoft YaHei";
+	color: #2284c0;
+	padding-left: 15px;
+	padding-right: 11px;
+	border-bottom: 1px solid #d8e3e9;
+	margin-bottom: 9px;
+}
+
+.smallTk .top i{
+	width: 12px;
+	height: 10px;
+	background: url(../images/closeBtn.png);
+	margin-top: 11px;
+	cursor: pointer;
+}
+
+.smallTk1{
+	left: 525px;
+	top: 129px;
+}
+
+
+.smallTk p{
+	font:12px/12px "Microsoft YaHei";
+	color: #787878;
+	margin-left: 15px;
+	margin-bottom: 7px;
+}
+
+.smallTk .arrow{
+	position: absolute;
+	width: 15px;
+	height: 8px;
+	background: url(../images/arrow.png);
+	bottom: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+.slide .qhBox{
+	margin-left: 12px;
+	margin-top: 14px;
+	padding-bottom: 7px;
+	border-bottom: 1px dashed #c1d4dd;
+}
+.slide .qhBox li{
+	float: left;
+	width: 107px;
+	height: 28px;
+	border:1px solid #cfcfcf;
+	text-align: center;
+	font:12px/28px "宋体";
+	cursor: pointer;
+	margin-right: 7px;
+	margin-bottom: 7px;
+}
+
+.slide .qhBox li.active{
+	width: 109px;
+	height: 30px;
+	border:none;
+	line-height: 30px;
+	background: url(../images/li_active.png);
+}
+
+
+.slide .jb{
+	padding-left: 12px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border-bottom: 1px solid #dedede;
+}
+
+.slide .jb .jbBox{
+	cursor: pointer;
+	font:12px/15px "宋体";
+	color: #5f5f5f;
+	float: left;
+	margin-right: 47px;
+	margin-bottom: 10px;
+}
+.slide .jb .i1{
+	width: 15px;
+	height: 15px;
+	background: url(../images/i1_bg.png);
+	margin-right: 5px;
+}
+
+.slide .jb .s1{
+	width: 21px;
+	height: 11px;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.slide .jb .active .i1{
+	background: url(../images/i1_bg1.png);
+}
+
+.slide .searchBox{
+	padding-top: 16px;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+.slide .searchBox input{
+	width: 219px;
+	height: 38px;
+	border: 1px solid #dedede;
+	margin:0 auto;
+	display: block;
+	border-radius: 7px;
+	-webkit-border-radius:7px;
+	text-indent: 14px;
+	font:14px/38px "宋体";
+	color: #e7e7e7;
+	background: #fff;
+}
+
+.slide .searchBox .soo{
+	position: absolute;
+	width: 20px;
+	height: 38px;
+	background: url(../images/soo.png);
+	right: 26px;
+	top: 17px;
+}
